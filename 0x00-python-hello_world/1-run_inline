@@ -1,2 +1,11 @@
 #!/bin/bash
 
+#check if PYCODE evn variable is set
+if [ -z "$PYCODE" ]; then
+	echo "Error: Environment variable of PYCODE is not set."
+	exit 1
+fi
+
+#Run python code stored in PYCODE
+
+python3 -c "$PYCODE"
