@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$PYFILE" ]; then
+	echo "Error: Environment variable PYFILE is unset."
+	exit 1
+fi
+
+python3 "$PYFILE"
