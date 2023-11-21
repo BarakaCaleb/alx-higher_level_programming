@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-"""Define classes for a singly linked list."""
+"""Define classes for a singly-linked list."""
 
 
 class Node:
@@ -14,23 +14,21 @@ class Node:
             data (int): The data of the new Node.
             next_node (Node): The next node of the new Node.
         """
-
         self.data = data
         self.next_node = next_node
 
+    @property
+    def data(self):
+        """Get/set the data of the Node."""
+        return (self.__data)
 
-        @property
-        def data(self):
-            """Get/set the data of the Node."""
-            return (self.__data)
+    @data.setter
+    def data(self, value):
+        if not isinstance(value, int):
+            raise TypeError("data must be an integer")
+        self.__data = value
 
-        @data.setter
-        def data(self, value):
-            if not isinstance(value, int):
-                raise TypeError("data must be an integer")
-            self.__data = value
-
-        @property
+    @property
     def next_node(self):
         """Get/set the next_node of the Node."""
         return (self.__next_node)
@@ -81,4 +79,3 @@ class SinglyLinkedList:
             values.append(str(tmp.data))
             tmp = tmp.next_node
         return ('\n'.join(values))
-
