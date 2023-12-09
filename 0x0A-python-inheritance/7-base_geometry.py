@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # Caleb Baraka 
-
+# calebbaraka79@gmail.com
 
 """Defines a base geometry class BaseGeometry."""
 
@@ -25,4 +25,3 @@ class BaseGeometry:
         """
         if type(value) != int:
             raise TypeError("{} must be greater than 0".format(name))
-

@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # Caleb Baraka
+# calebbaraka79@gmail.com
 
 """Defines a base geometry class BaseGeometry."""
 
