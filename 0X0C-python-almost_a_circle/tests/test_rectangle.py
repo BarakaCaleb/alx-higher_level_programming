@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # test_rectangle.py
-
+# Caleb Baraka
 
 """Defines unittests for models/rectangle.py.
 

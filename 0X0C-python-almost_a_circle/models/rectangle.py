@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # rectangle.py
-
+# Caleb Baraka
 
 
 """Defines a rectangle class."""
