@@ -1,3 +1,3 @@
- let HeaderElement = document.querySelector('header');
+ document.querySelector('header').style.color = '#FF0000';
+
  
- HeaderElement.style.color = '#FF0000';
